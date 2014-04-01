@@ -23,12 +23,9 @@ require.config({
   deps : ['jquery','underscore']
 });
 
-require(['app','backbone','routers/index','controllers/index'],function(app,Backbone,Router,Controller){
+require(['app','backbone'],function(app,Backbone){
   "use strict";
 
   app.start();
-  new Router({
-    controller : Controller
-  });
   Backbone.history.start();
 });
