@@ -4,7 +4,7 @@ define(
   function(marionette, vent){
     "use strict";
 
-    var app = new marionette.Application(),
+    var app = new marionette.Application();
 
     app.addRegions({
       header : '#header',
