@@ -7,26 +7,25 @@
 	  <!--[if IE]>
   <script src="js/lib/ie.js"></script>
   <![endif]-->
-</head>
-<body>
+
+
 <style>
-nav {
+#nav {
 	background-color: #B2FFB2;
 	border: 1px solid #dedede;
 	border-radius: 4px;
 	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
 	color: #888;
 	display: block;
-	margin: 8px 22px 8px 0px;
 	overflow: hidden;
 	width: 100%; 
 }
-nav ul {
+#nav ul {
 	margin: 0;
 	padding: 0;
 }
 
-nav ul li {
+#nav ul li {
 		display: inline-block;
 		list-style-type: none;
 		
@@ -37,14 +36,14 @@ nav ul li {
 		transition: all 0.2s; 
 	}
 	
-nav > ul > li > a {
+#nav > ul > li > a {
 			color: #aaa;
 			display: block;
 			line-height: 56px;
 			padding: 0 24px;
 			text-decoration: none;
 		}
-nav > ul > li > a > .caret {
+#nav > ul > li > a > .caret {
 	border-top: 4px solid #aaa;
 	border-right: 4px solid transparent;
 	border-left: 4px solid transparent;
@@ -59,19 +58,20 @@ nav > ul > li > a > .caret {
 	-o-transition: color 0.1s linear;
 	  transition: color 0.1s linear; 
 }
- nav > ul > li:hover {
-          background-color: #66FF66;
+ #nav > ul > li:hover {
+          background-color: #80CCFF;
         }
 
-        nav > ul > li:hover > a {
+#nav > ul > li:hover > a {
           color: rgb( 255, 255, 255 );
         }
 
-        nav > ul > li:hover > a > .caret {
+#nav > ul > li:hover > a > .caret {
           border-top-color: rgb( 255, 255, 255 );
         }
-	nav > ul > li > div {
-	background-color: #66FF66;
+		
+#nav > ul > li > div {
+	background-color: #80CCFF;
 	border-top: 0;
 	border-radius: 0 0 4px 4px;
 	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
@@ -90,29 +90,35 @@ nav > ul > li > a > .caret {
 	-transition: opacity 0.2s;
 }
 
-	nav > ul > li > div ul > li {
+#nav > ul > li > div ul > li {
 		display: block;
 	}
 	
-		nav > ul > li > div ul > li > a {
+#nav > ul > li > div ul > li > a {
 			color: #fff;
 			display: block;
 			padding: 12px 24px;
 			text-decoration: none;
 		}
 	
-	nav > ul > li > div ul > li:hover > a {
+#nav > ul > li > div ul > li:hover > a {
 		background-color: rgba( 255, 255, 255, 0.1);
 	}
-  	nav > ul > li:hover > div {
+	
+#nav > ul > li:hover > div {
 	display: block;
 	opacity: 1;
 	visibility: visible;
 }	
+body{
+margin:0px;
+}
 </style>
-<section id="nsapp">
+</head>
+<body>
+<div id="nsapp">
   <header id="header">
-  <nav>
+  <div id='nav'>
 	<ul>
 		<li><a href="home.html">Home</a></li>
 		<li><a href="about.html">About</a>
@@ -126,17 +132,17 @@ nav > ul > li > a > .caret {
 		</li>
 		<li><a href="help.html">Help</a></li>
 	</ul>
-  </nav>
+  </div>
   </header>
   <section id="main">
   </section>
   <footer id="footer">
   </footer>
-</section>
+</div>
 <footer id="info">
   <p>Created by <a href="http://github.com/deepakparyani">Deepak Paryani</a></p>
 </footer>
-<script data-main="js/main" src="js/lib/require.js"></script>
+<!--script data-main="js/main" src="js/lib/require.js"></script-->
 
 
 </body>
