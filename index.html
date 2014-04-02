@@ -13,8 +13,14 @@
 </head>
 <body>
 <div id="nsapp">
-  <header id="header">
-  <div id='nav'>
+  <section id="header">
+    <nav id='top'>
+	<div id="appnameDiv">
+		<div>Olatruc</div>
+	</div>
+
+  </nav>
+  <nav id='nav'>
 	<div id="appnameDiv">
 		<div>Olatruc</div>
 	</div>
@@ -32,19 +38,28 @@
 		</li>
 		<li><a href="help.html">Help</a></li>
 	</ul>
-  </div>
-  </header>
-  <section id="main">
+  </nav>
+  
   </section>
+  <section id="main">
+
+  
+  
   <footer id="footer">
+	<div>
+		sdfgh<p>dfghj</p>
+	</div>
   </footer>
+  </section>
+  
 </div>
-<footer id="info">
-  <p>Created by <a href="http://github.com/deepakparyani">Deepak Paryani</a></p>
-</footer>
 <!--script data-main="js/main" src="js/lib/require.js"></script-->
-
-
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/pageUI.js"></script>
+  <script>
+  for(var i=0;i<100;i++)
+  $('#main').prepend("<div>qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm</div>");
+  </script>
 </body>
 
 </html>

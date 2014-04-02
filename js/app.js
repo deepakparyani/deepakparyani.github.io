@@ -13,7 +13,7 @@ define(
     });
 
     app.addInitializer(function(){
-      //app.header.show(new Header(viewOptions));
+      app.header.show(new Header(viewOptions));
       //app.main.show(new TodoListCompositeView(viewOptions));
       //app.footer.show(new Footer(viewOptions));
     });

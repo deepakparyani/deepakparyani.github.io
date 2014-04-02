@@ -12,10 +12,15 @@
   text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
   
 }
+.getFixed{
+position:fixed;
+top:0;
+left:0;
+}
 #appnameDiv>div{
 cursor:pointer;
 }
-#nav {
+#nav,#top {
 	background-color: #B2FFB2;
 	border: 1px solid #dedede;
 	border-radius: 4px;

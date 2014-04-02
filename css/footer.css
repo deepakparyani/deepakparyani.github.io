@@ -1,5 +1,9 @@
 #info{
-position:absolute;
+position:fixed;
 top:90%;
-left:0%;
+left:85%;
+}
+#footer{
+border:2px solid red;
+width:100%;
 }
