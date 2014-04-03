@@ -1,5 +1,4 @@
 #appnameDiv{
-	background-color: #B2FFB2;
 	float:left;
 	margin: 0;
 	padding: 0px 5%;
@@ -8,20 +7,38 @@
 	text-decoration: none;
   font-family: 'Pacifico', Helvetica, sans-serif;
   font-size:2.5em;
-  color: green;
+  color: white;
   text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
   
 }
 .getFixed{
+
+animation:mymove 0.2s;
+-webkit-animation:mymove 0.2s; /*Safari and Chrome*/
+top:0px;
+left:0px;
 position:fixed;
-top:0;
-left:0;
 }
+@keyframes mymove
+{
+from {top:0%;}
+to {top:0px;}
+}
+
+@-webkit-keyframes mymove /*Safari and Chrome*/
+{
+from {top:0%;}
+to {top:0px;}
+}
+
+
 #appnameDiv>div{
 cursor:pointer;
+position:absolute;
+height:10%;
 }
 #nav,#top {
-	background-color: #B2FFB2;
+	background-color: #1B4068;
 	border: 1px solid #dedede;
 	border-radius: 4px;
 	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
@@ -48,7 +65,7 @@ cursor:pointer;
 	}
 	
 #nav > ul > li > a {
-			color: green;
+			color: white;
 			display: block;
 			line-height: 56px;
 			padding: 0 24px;
