@@ -4,6 +4,7 @@ require.config({
     backbone   : 'lib/backbone',
     marionette : 'lib/backbone.marionette',
     jquery     : 'lib/jquery.min',
+    jqueryui   : 'lib/jquery-ui',
     tpl        : 'lib/tpl'
   },
   shim : {
@@ -13,7 +14,7 @@ require.config({
     },
     backbone : {
       exports : 'Backbone',
-      deps : ['jquery','underscore']
+      deps : ['jquery','underscore','jqueryui']
     },
     marionette : {
       exports : 'Backbone.Marionette',
@@ -25,7 +26,7 @@ require.config({
 
 require(['app','backbone'],function(app,Backbone){
   "use strict";
-
   app.start();
-  Backbone.history.start();
+    baseUtils(Backbone);
+ // Backbone.history.start();
 });
